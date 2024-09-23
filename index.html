@@ -164,9 +164,36 @@
         font-weight: 300;
         text-align: center;
       }
+      footer a:hover {
+        text-decoration: underline;
+      }
       a {
         text-decoration: none;
         color: white;
+      }
+      @media (max-width: 1000px) {
+        .rabbits h2 {
+          padding-top: 132px;
+          letter-spacing: 5px;
+          font-size: 14px;
+          color: var(--bg-color);
+        }
+        .rabbits h1 {
+          margin-top: 80px;
+          font-size: 78px;
+        }
+      }
+      @media (max-width: 841px) {
+        .rabbits h2 {
+          padding-top: 90px;
+          letter-spacing: 5px;
+          font-size: 10px;
+          color: var(--bg-color);
+        }
+        .rabbits h1 {
+          margin-top: 60px;
+          font-size: 60px;
+        }
       }
     </style>
     <title>My Bunnies</title>
@@ -244,7 +271,7 @@
       <h2>| PHOTOS</h2>
       <h1>More pictures of Bebo and Zozo</h1>
       <div class="row">
-        <div class="col-4">
+        <div class="col">
           <a
             href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/724/original/20240810_113659.jpg?1727086357"
             ><img
@@ -252,7 +279,7 @@
               alt=""
           /></a>
         </div>
-        <div class="col-4">
+        <div class="col">
           <a
             href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/741/original/Screenshot_20240923-142600_Facebook.jpg?1727094474"
             ><img
@@ -260,7 +287,7 @@
               alt=""
           /></a>
         </div>
-        <div class="col-4">
+        <div class="col">
           <a
             href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/742/original/Screenshot_20240923-142557_Facebook.jpg?1727094483"
             ><img
@@ -270,7 +297,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-4">
+        <div class="col">
           <a
             href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/745/original/Screenshot_20240923-143833_Gallery.jpg?1727095353"
             ><img
@@ -278,7 +305,7 @@
               alt=""
           /></a>
         </div>
-        <div class="col-4">
+        <div class="col">
           <a
             href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/746/original/20240923_144002.jpg?1727095364"
             ><img
@@ -286,7 +313,7 @@
               alt=""
           /></a>
         </div>
-        <div class="col-4">
+        <div class="col">
           <a
             href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/744/original/Screenshot_20240923-144032_Gallery.jpg?1727095345"
             ><img
