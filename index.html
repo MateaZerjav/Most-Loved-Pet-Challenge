@@ -16,51 +16,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-          :root {
-      --bg-color: #ab6b6b;
-      --heading-font-family: "Roboto", sans-serif;
-      --button-font-family: "Montserrat", sans-serif;}
-        .rabbits {
-          color: white;
-          background-color: #1b1b1b;
-          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/377/original/beboundzozo.jpg?1726831982);
-          background-size: 100%;
-          background-repeat: no-repeat;
-          h1,h2,p{font-family: var(--heading-font-family)}
-          h1,h2,button{font-weight: 700;font-style: normal}
-          padding-bottom: 233px;
-          }
-        .hero {
-          display: block;
-          margin: 0 auto;
-         rgba(39, 32, 68, 1);
+      :root {
+        --bg-color: #ab6b6b;
+        --heading-font-family: "Roboto", sans-serif;
+        --button-font-family: "Montserrat", sans-serif;
+      }
 
-              }
-        .learn-more{
+      .rabbits {
+        color: white;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/377/original/beboundzozo.jpg?1726831982);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 433px;
+      }
+      .hero {
+        display: block;
+        margin: 0 auto;
+      }
+      .learn-more {
         margin: 0 auto;
         display: block;
         font-family: var(--button-font-family);
         background-color: var(--bg-color);
         color: white;
         font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 3px;
         text-transform: uppercase;
         border: none;
         padding: 18px 30px;
         margin-top: 100px;
-        }
-        .rabbits h1,h2,p,button{
-          margin: 0 auto;
+      }
+      .rabbits h1,
+      h2,
+      p,
+      button {
+        margin: 0 auto;
         display: block;
         text-align: center;
-        }
-       .rabbits h2{
+      }
+      .rabbits h2,
+      h1 {
+        font-weight: 900;
+        font-family: var(--heading-font-family);
+      }
+      .rabbits h2 {
         padding-top: 232px;
-       }
-       .rabbits h1{
+        letter-spacing: 5px;
+        font-size: 24px;
+        color: var(--bg-color);
+      }
+      .rabbits h1 {
         margin-top: 80px;
-       }
-       .rabbits p{
+        font-size: 128px;
+      }
+      .rabbits p {
         margin-top: 16px;
+        font-weight: 800;
+        font-size: 40;
+      }
+      .zozo img {
+        aspect-ratio: 1/1;
+        height: 585px;
+        border-radius: 10px;
+        margin-top: 100px;
+      }
+      .zozo h2 {
+        margin-top: 200px;
+        font-size: 13px;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-align: left;
+      }
+      .zozo h1 {
+        margin-top: 10px;
+        font-size: 48px;
+        font-weight: 900;
       }
     </style>
     <title>My Bunnies</title>
@@ -74,8 +105,23 @@
     </div>
     <div class="hero container zozo">
       <div class="row">
-        <div class="col">halo</div>
-        <div class="col">halo</div>
+        <div class="col">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/710/original/IMG-20240923-WA0003.jpg?1727073759"
+            alt="rabbits"
+          />
+        </div>
+        <div class="col">
+          <h2>| WHY</h2>
+          <h1>Why Rabbits are my favorite?</h1>
+          <p>
+            Rabbits have always had a special place in my heart, especially my
+            two adorable companions, Bebo and Zozo. These gentle creatures have
+            taught me so much about love, patience, and joy. Here’s why they are
+            my favorite:
+          </p>
+          <button class="learn-more">Learn more</button>
+        </div>
       </div>
     </div>
     <div class="hero container bebo">
