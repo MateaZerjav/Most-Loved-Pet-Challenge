@@ -33,7 +33,7 @@
         display: block;
         margin: 0 auto;
       }
-      .learn-more {
+      .button {
         margin: 0 auto;
         display: block;
         font-family: var(--button-font-family);
@@ -46,6 +46,17 @@
         border: none;
         padding: 18px 30px;
         margin-top: 100px;
+        width: 200px;
+      }
+      .button:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: var(--bg-color);
+        border: solid;
+        border-color: var(--bg-color);
+        border-width: thin;
+      }
+      .button a:hover {
+        color: var(--bg-color);
       }
       .rabbits h1,
       h2,
@@ -85,14 +96,16 @@
         text-align: left;
       }
       .zozo h2,
-      .bebo h2 {
+      .bebo h2,
+      .photos h2 {
         margin-top: 200px;
         font-size: 13px;
         letter-spacing: 5px;
         font-weight: 900;
       }
       .zozo h1,
-      .bebo h1 {
+      .bebo h1,
+      .photos h1 {
         margin-top: 10px;
         font-size: 48px;
         font-weight: 900;
@@ -104,7 +117,8 @@
       .bebo h2 {
         padding-top: 195px;
       }
-      .bebo h1 {
+      .bebo h1,
+      .photos h1 {
         text-align: center;
         margin-bottom: 15px;
       }
@@ -118,9 +132,40 @@
       }
       .bebo strong {
         color: var(--bg-color);
-        font-size: 20px;
+        font-size: 50px;
       }
+      .photos {
+        max-width: 900px;
+      }
+      .photos img {
+        margin: 0 auto;
+        display: block;
+        aspect-ratio: 1/1;
+        max-width: 300px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
       footer {
+        color: white;
+        background-color: #ab6b6b;
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: var(--heading-font-family);
+      }
+      footer h1 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      footer p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
         color: white;
       }
     </style>
@@ -131,9 +176,9 @@
       <h2>.PET.</h2>
       <h1>Bebo and Zozo</h1>
       <p>Bunnies</p>
-      <button class="learn-more">Get Started</button>
+      <a class="button get-startet" href="#why">Get Started</a>
     </div>
-    <div class="hero container zozo">
+    <div class="hero container zozo" id="why">
       <div class="row">
         <div class="col">
           <img
@@ -150,11 +195,12 @@
             taught me so much about love, patience, and joy. Here’s why they are
             my favorite:
           </p>
-          <button class="learn-more">Learn more</button>
+
+          <a class="button learn-more" href="#about">Learn more</a>
         </div>
       </div>
     </div>
-    <div class="hero bebo">
+    <div class="hero bebo" id="about">
       <h2>| ABOUT</h2>
       <h1>The Charming Personalities and</h1>
       <h1>Joy of Living with Rabbits</h1>
@@ -194,15 +240,95 @@
         absolute favorite companions. I wouldn’t trade them for the world!
       </p>
     </div>
+    <div class="hero photos">
+      <h2>| PHOTOS</h2>
+      <h1>More pictures of Bebo and Zozo</h1>
+      <div class="row">
+        <div class="col-4">
+          <a
+            href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/724/original/20240810_113659.jpg?1727086357"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/724/original/20240810_113659.jpg?1727086357"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-4">
+          <a
+            href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/741/original/Screenshot_20240923-142600_Facebook.jpg?1727094474"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/741/original/Screenshot_20240923-142600_Facebook.jpg?1727094474"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-4">
+          <a
+            href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/742/original/Screenshot_20240923-142557_Facebook.jpg?1727094483"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/742/original/Screenshot_20240923-142557_Facebook.jpg?1727094483"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a
+            href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/745/original/Screenshot_20240923-143833_Gallery.jpg?1727095353"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/745/original/Screenshot_20240923-143833_Gallery.jpg?1727095353"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-4">
+          <a
+            href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/746/original/20240923_144002.jpg?1727095364"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/746/original/20240923_144002.jpg?1727095364"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-4">
+          <a
+            href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/744/original/Screenshot_20240923-144032_Gallery.jpg?1727095345"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/744/original/Screenshot_20240923-144032_Gallery.jpg?1727095345"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="row">
           <div class="col">
             <h1>More about Rabbits</h1>
-            <a href=""></a> <a href=""></a>
+            <p>
+              <a href="https://www.youtube.com/@LennonTheBunny" target="_blank"
+                >YouTube channel-about bunnies</a
+              >
+            </p>
+            <p>
+              <a href="https://en.wikipedia.org/wiki/Rabbit" target="_blank"
+                >Wikipedia page</a
+              >
+            </p>
           </div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col">
+            <h1>
+              <a href="https://mateazerjav.com/" target="_blank">About me</a>
+            </h1>
+            <p>
+              Hi! My name is Matea and I've been living in Stuttgart for several
+              years. I love my rabbits. I created this page as part of a project
+              for SheCodes to develop my coding skills.
+            </p>
+          </div>
+          <div class="col">
+            <h1>About this website</h1>
+            <p>
+              This page was created as part of a project for SheCodes to develop
+              my coding skills. And to celebrate my pets.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
